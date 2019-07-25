@@ -1,3 +1,22 @@
+# bgh atlas
+
+### To run the website using a docker copy/paste/run this into the terminal
+```bash
+export JEKYLL_VERSION=3.8
+docker run --rm --volume="$PWD:/srv/jekyll"    \
+-p 9999:4000 -it jekyll/jekyll:$JEKYLL_VERSION \
+jekyll serve
+```
+Then go to http://localhost:9999 in your browser
+
+# Examples of posts
+* https://github.com/gustavoquinalha/jekyll-help-center-theme 
+* https://jekyller.github.io/jasper2/the-editor
+
+# Embed maps with filterable locations in Jekyll
+* https://github.com/ayastreb/jekyll-maps
+
+
 # Jekyll | Help Center
 Simple and responsive Jekyll theme for help center.
 
