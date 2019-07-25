@@ -1,0 +1,62 @@
+---
+layout: model
+model_name: Continental accretion
+author: 'Louis Moresi'
+# Software options include Badlands, Underworld or Coupled
+software: Underworld # [X|Y|Z]
+# Provide a category from Depositiona, Tectonic or Coupled
+category: tectonic # [tectonic|bob|jane|all]
+# Provide a subcategory for your model between
+# the quotation marks.
+# Options for tectonic models are:
+# - "Extension"
+# - "Compression"
+# - "Strike-slip-tectonic"
+# Options for depositional models are:
+# - "Basin"
+# - "Rift"
+# - "Stirke-slip-depositional"
+# - "Fluvio-deltaic"
+# - "Case-studies"
+# Coupled models can have either
+subcategory: compressional
+# Image to display on the menu
+thumbnail: 'https://www.earthbyte.org/wp-content/uploads/2017/09/underworld.png'
+# Image to dispaly
+image:
+  - url: ''
+    description: ''
+
+# Animations to display
+animation:
+  - url: ''
+    description: ''
+# Describe the conditions/parameters for the models in a table or image
+conditions:
+  - url: ''
+    table: ''
+    description: ''
+
+# Give text for model results
+result:
+  - url: ''
+    description: ''
+
+# Give citation or DOI for paper
+citation: ''
+
+# Online pointer to your model (Git/Binder/FTP etc.)
+model_url: ''
+
+# Hashable search terms
+keywords: '' 
+
+# Model location coordinates
+location: 
+  - latitude: ''
+  - longitude: ''
+
+# Contact 
+contact:
+---
+
