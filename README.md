@@ -16,8 +16,6 @@ Then go to http://localhost:9999 in your browser
 # Embed maps with filterable locations in Jekyll
 * https://github.com/ayastreb/jekyll-maps
 
-# YAML lint (validator)
-http://www.yamllint.com/
 
 # Jekyll | Help Center
 Simple and responsive Jekyll theme for help center.
