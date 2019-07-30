@@ -19,15 +19,11 @@ language:  "en"
 
 # Build settings
 markdown: kramdown
-#permalink: /:title/
+permalink: /:title/
 gems: [jekyll-paginate]
 paginate: 5
-
-
-analytics: UA-143750223-1
 
 # Plugins
 plugins_dir:
   - jekyll-admin
-  - jekyll-paginate
   - jekyll-sitemap

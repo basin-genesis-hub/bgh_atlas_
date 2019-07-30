@@ -20,35 +20,82 @@ layout: default
     <!-- titles -->
     <!-- posts -->
     <div class="">
-      {% for x in page.git_model %}
       <div class="list-item-2 container wrap-reverse align-items-end justify-content-center" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
-        {% if page.image %}
+<!--         {% if page.thumbnail %}
         <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-          <img src="{{ page.image }}" width="100%" alt="">
+          <img src="{{ page.thumbnail }}" width="100%" alt="">
         </div>
-        {% endif %}
+        {% endif %} -->
         <div class="flex-basis-400 flex-grow-5">
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <h2 class="list-post-title">
-            {{x.g}}
+            {{page.software}} - {{page.category}} model
             </h2>
           </div>
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
-              {{x.a}}
-              {{page.animation}}
-              {{page.animation_blurb}}
-              {{page.model_setup_image}}
-              {{page.model_setup_blurb}}
-              {{page.boundary_conditions_table_image}}
-              {{page.boundary_conditions_table_blurb}}
-              {{page.main_result_image}}
-              {{page.main_result_blurb}}
+
+              <h3 class="list-post-title">
+              Model Setup: 
+              </h3>
+              
+              {% if page.model_setup.url %}
+              <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+              <img src="{{ page.model_setup.url}}" width="100%" alt=""/>
+              {{page.model_setup.description}}
+              </div>
+              {% endif %}
+
+              <br>
+
+              <h3 class="list-post-title">
+              Conditions: 
+              </h3>
+              {% if page.conditions.url %}
+              <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+              <img src="{{ page.conditions.url}}" width="100%" alt=""/>
+              {{page.conditions.description}}
+              </div>
+              {% endif %}
+              
+              <br>
+              
+              <h3 class="list-post-title">
+              Results: 
+              </h3>
+              {% if page.result.url %}
+              <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+              <img src="{{ page.result.url}}" width="100%" alt=""/>
+              {{page.result.description}}
+              </div>
+              {% endif %}
+ 
+              <br>
+ 
+              {% if page.animation.url %}
+              <div >
+                <!-- {{page.animation.url}} -->
+                <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                <!-- <img src="{{ page.animation.url}}" width="100%" alt=""> -->
+                {{page.animation.url}}
+                </div>
+              {{page.animation.description}}
+              </div>
+              {% endif %}
+              
+              <br>
+
+              <h3 class="list-post-title">
+              Citation: 
+              </h3>
+              {% if page.citation %}
+              {{page.citation}}
+              {% endif %}
+
             </span>
           </div>
         </div>
       </div>
-      {% endfor %}
     </div>
     <!-- posts -->
 

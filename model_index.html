@@ -1,0 +1,22 @@
+--
+layout: page
+title: Model Index
+permalink: /tectonics/
+---
+<h3>Tectonics</h3>
+<ul>
+    {% for doc in site.posts %}
+      {% if doc.software == "Underworld" %}
+      <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>
+
+<h3>Depositional</h3>
+<ul>
+    {% for doc in site.posts %}
+      {% if doc.colour == "Badlands" %}
+      <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>

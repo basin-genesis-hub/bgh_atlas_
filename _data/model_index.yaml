@@ -1,0 +1,8 @@
+docs_list_title: Model Index
+docs:
+  - title: Tectonic models
+    url: tectonics/
+  - title: Depositional models
+    url: depositional/
+  - title: Coupled models
+    url: coupled/
