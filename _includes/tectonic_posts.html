@@ -9,6 +9,9 @@
     <a href="{{ site.baseurl }}{{ post.url }}" class="list-item container" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
 
       <div class="list-item-icon container align-items-center justify-content-center">
+        <!-- <span> -->
+        <!-- <img src="{{ page.model_setup.url}}" width="100%" alt=""/> -->
+        <!-- </span> -->
         <span class="feather-icon icon-{{post.icon}}" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"></span>
       </div>
 
@@ -20,7 +23,7 @@
         </div>
 
         <div class="" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
-          <span class="list-post-description">{{ post.animation.description }}</span>
+          <span class="list-post-description">{{ post.animation.description | truncate: 256}}</span>
         </div>
 
         <div class="list-post-written" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">

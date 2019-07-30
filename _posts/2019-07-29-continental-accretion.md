@@ -9,6 +9,7 @@ category: 'tectonic' #
 subcategory: 'compression'
 # Image to display on the menu
 thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/SlabPlateauCollision_white_background.jpg'
+icon: 'globe'
 # Animations to display
 animation:
   url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/u0yVyJBPSqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'

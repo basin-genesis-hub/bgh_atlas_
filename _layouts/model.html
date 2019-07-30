@@ -57,7 +57,13 @@ layout: default
               {{page.conditions.description}}
               </div>
               {% endif %}
-              
+              {% if page.conditions.table %}
+              <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+              {{page.conditions.table}}
+              {{page.conditions.description}}
+              </div>
+              {% endif %}
+
               <br>
               
               <h3 class="list-post-title">
