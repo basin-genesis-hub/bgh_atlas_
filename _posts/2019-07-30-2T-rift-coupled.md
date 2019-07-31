@@ -9,6 +9,7 @@ category: 'coupled' #
 subcategory: 'coupled'
 # Image to display on the menu
 thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Beucher_2T_rift_frame.jpg'
+icon: globe
 # Animations to display
 animation:
   url: 'https://raw.githubusercontent.com/underworldcode/UWGeodynamics/57c498885f0d4171982a0a595274d8a2856647ea/tutorials/images/Tutorial11.gif'

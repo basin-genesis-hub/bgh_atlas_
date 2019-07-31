@@ -35,6 +35,17 @@ layout: default
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
 
+              {% if page.animation.url %}
+              <div >
+                <!-- {{page.animation.url}} -->
+                <!-- <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0"> -->
+                <img src="{{ page.animation.url}}" width="100%" alt="">
+                {{page.animation.url}}
+                </div>
+              {{page.animation.description}}
+              </div>
+              {% endif %}
+
               <h3 class="list-post-title">
               Model Setup: 
               </h3>
@@ -77,25 +88,20 @@ layout: default
               {% endif %}
  
               <br>
- 
-              {% if page.animation.url %}
-              <div >
-                <!-- {{page.animation.url}} -->
-                <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                <!-- <img src="{{ page.animation.url}}" width="100%" alt=""> -->
-                {{page.animation.url}}
-                </div>
-              {{page.animation.description}}
-              </div>
-              {% endif %}
               
-              <br>
-
+              {% if page.citation %}
               <h3 class="list-post-title">
               Citation: 
               </h3>
-              {% if page.citation %}
               {{page.citation}}
+              {% endif %}
+              <br>
+              
+              <h3 class="list-post-title">
+              Model URL: 
+              </h3>
+              {% if page.model_url %}
+              {{page.model_url}}
               {% endif %}
 
             </span>
