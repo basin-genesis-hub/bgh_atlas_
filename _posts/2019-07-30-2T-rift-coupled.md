@@ -12,7 +12,7 @@ thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/B
 icon: globe
 # Animations to display
 animation:
-  url: 'https://raw.githubusercontent.com/underworldcode/UWGeodynamics/57c498885f0d4171982a0a595274d8a2856647ea/tutorials/images/Tutorial11.gif'
+  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Tutorial11.gif'
   description: 'This is a rifting thermo-mechanical model coupled between Underworld and Badlands.'
 #Model setup
 model_setup:
