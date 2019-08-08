@@ -14,8 +14,8 @@ layout: default
     <!-- titles -->
     <h1 class="post-title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">{{ page.model_name }}</h1>
     <div class="post-date" data-aos="fade-left" data-aos-delay="300" data-aos-offset="0">
-      <time>{{ page.date | date_to_string }}</time>
-      <span class="reading-time" title=" Author "> - {{ page.author }}</span>
+      <!-- <time>{{ page.date | date_to_string }}</time> -->
+      <span class="reading-time" title=" Author ">{{ page.author }}</span>
     </div>
     <!-- titles -->
     <!-- posts -->
@@ -38,7 +38,7 @@ layout: default
               {% if page.animation.url %}
               <div >
                 <!-- {{page.animation.url}} -->
-                <!-- <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0"> -->
+                <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
                 <img src="{{ page.animation.url}}" width="100%" alt="">
                 {{page.animation.url}}
                 </div>
@@ -46,11 +46,11 @@ layout: default
               </div>
               {% endif %}
 
+              {% if page.model_setup.url %}
               <h3 class="list-post-title">
               Model Setup: 
               </h3>
               
-              {% if page.model_setup.url %}
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               <img src="{{ page.model_setup.url}}" width="100%" alt=""/>
               {{page.model_setup.description}}
@@ -59,16 +59,21 @@ layout: default
 
               <br>
 
+              
+              {% if page.conditions.url %}
               <h3 class="list-post-title">
               Conditions: 
               </h3>
-              {% if page.conditions.url %}
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               <img src="{{ page.conditions.url}}" width="100%" alt=""/>
               {{page.conditions.description}}
               </div>
               {% endif %}
+              
               {% if page.conditions.table %}
+              <h3 class="list-post-title">
+              Conditions: 
+              </h3>
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               {{page.conditions.table}}
               {{page.conditions.description}}
@@ -77,10 +82,10 @@ layout: default
 
               <br>
               
+              {% if page.result.url %}
               <h3 class="list-post-title">
               Results: 
               </h3>
-              {% if page.result.url %}
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               <img src="{{ page.result.url}}" width="100%" alt=""/>
               {{page.result.description}}
@@ -96,11 +101,11 @@ layout: default
               {{page.citation}}
               {% endif %}
               <br>
-              
+
+              {% if page.model_url %}              
               <h3 class="list-post-title">
               Model URL: 
               </h3>
-              {% if page.model_url %}
               {{page.model_url}}
               {% endif %}
 
