@@ -22,7 +22,7 @@ model_setup:
 conditions: 
   table: |
       | Parameter                 | Value |
-      |---------------------------|:-----:|
+      |:---                       |:---  :|
       | Precipitation [m/a]       |  1    |
       | erodibility coefficient   | 4.e-7 |
       | diffprop                  | 0.075 |
