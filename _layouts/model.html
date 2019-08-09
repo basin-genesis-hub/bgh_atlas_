@@ -61,10 +61,31 @@ layout: default
               <br>
 
               
+              
+
               {% if page.conditions.url %}
               <h3 class="list-post-title">
               Conditions: 
               </h3>
+              <table border="3">
+                <tbody>
+                  {% for e in page.table %}
+                    {% if forloop.first == true %}
+                    <tr>
+                    {% for item in e %}
+                        <th>{{item[0]}}</th>
+                    {% endfor %}
+                    </tr>
+                    {% endif %}
+                    <tr>
+                    {% for item in e %}
+                        <td>{{item[1]}}</td>
+                    {% endfor %}
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               <img src="{{ page.conditions.url}}" width="100%" alt=""/>
               {{page.conditions.description}}
