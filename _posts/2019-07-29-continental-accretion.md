@@ -22,16 +22,6 @@ model_setup:
 conditions:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_BC-1.jpg'
   table:
-  - ip_address: 192.168.0.1
-    model: Netgear Whatever
-    department: network
-    location: Tempe, Arizona
-    devicetype: Router
-  - ip_address: 192.168.0.2
-    model: T2000
-    department: time travel
-    location: 2035
-    devicetype: weaponry
   description: 'Viscosity, density and yield strength for each of the domains in the model setup for a 80-Myr-old lithosphere'
 # Give text for model results
 result:
@@ -39,7 +29,7 @@ result:
   description: 'A comparison of velocities during collision, accretion and recovery. Shown are the velocities of the subducting plate (black lines), the retreating end of the plate boundary (‘Trench retreat rate’, green), the colliding end of the plate boundary ‘Trench advance rate’, red), and the cusp of the laterally retreating trench (‘Lateral rollback rate’, blue). Negative velocities indicate retreat, positive velocities indicate advance.'
 
 # Give citation or DOI for paper
-citation: 'doi:10.1038/nature13033'
+citation: 'https://www.nature.com/articles/nature13033'
 
 # Online pointer to your model (Git/Binder/FTP etc.)
 model_url: 'doi:10.1038/nature13033'
