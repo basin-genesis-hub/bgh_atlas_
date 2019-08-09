@@ -21,8 +21,8 @@ model_setup:
 # Describe the conditions/parameters for the models in a table or image
 conditions:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Beucher_2T_rift_BC.png'
-  table: ''
-  description: 'The model has a layered cake configuration with different rheologies and sediment properties'
+  description: 'The model has a layered cake configuration with different rheologies and sediment properties' 
+  
 # Give text for model results
 result:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Beucher_2T_rift_frame.jpg'
