@@ -20,15 +20,21 @@ model_setup:
   description: 'The initial configuration of the modeling domain resembles the topography of a natural source to sink system with relief on the headwaters, a decrease in slope on the continental plain and successive changes on the gradient of the continental shelf and the continental slope. To ensure that our simulations mimic a funnel-like drainage basin shape in the continental domain and sediment is delivered to the marine domain through a point-source we imposed a longitudinal topographic low in the middle of the modeling domain.'
 # Describe the conditions/parameters for the models in a table or image
 conditions: 
-  table: 
-    - Parameter:value
-    - precipitation [m/a]:1
-    - erodibility coefficient: 4.e-7
-    - diffprop: 0.075
-    - elastic thickness(km): 50.
-  url: ~
-
+  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_BC-1.jpg'
+  table:
+  - Parameter: value
+    precipitation [m/a]: 1
+    erodibility coefficient: 4.e-7
+    diffprop: 0.075
+    elastic thickness(km): 50
+  - Parameter: lenght
+    precipitation: 4
+    erodibility coefficient: 4.e-7
+    diffprop: 0.075
+    elastic thickness(km): 50
   description: 'We extracted sea-level fluctuations spanning 10 Myr from the global sea-level curves published by Kominz et al., (2008). The extracted intervals span the Oligocene (specifically 33.9 Ma to 23.9 Ma) and the Paleocene (specifically 66.0 Ma to 56.0 Ma) and were chosen to represent contrasting ice house and green house periods, respectively. These simulations are then compared to a suite flexurally-compensated models. The sea-level curves we used have observations each 0.1 Myr and the time step of the simulations are designed to capture changes in that time resolution. In all the simulations we first let the simulations run for 2 Myr without any sea-level fluctuations so that the delta can reach dynamic equilibrium without any base level disturbances. For a more comprenhensive list of parameters go to https://github.com/saraemp/delta'
+
+
 # Give text for model results
 result:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Delta_ms_metrics_Fig3.jpg'

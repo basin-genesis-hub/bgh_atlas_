@@ -21,7 +21,17 @@ model_setup:
 # Describe the conditions/parameters for the models in a table or image
 conditions:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_BC-1.jpg'
-  table: ''
+  table:
+  - ip_address: 192.168.0.1
+    model: Netgear Whatever
+    department: network
+    location: Tempe, Arizona
+    devicetype: Router
+  - ip_address: 192.168.0.2
+    model: T2000
+    department: time travel
+    location: 2035
+    devicetype: weaponry
   description: 'Viscosity, density and yield strength for each of the domains in the model setup for a 80-Myr-old lithosphere'
 # Give text for model results
 result:
