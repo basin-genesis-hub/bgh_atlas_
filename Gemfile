@@ -11,4 +11,5 @@ group :jekyll_plugins do
   gem 'omniauth-google-oauth2'
   gem 'jekyll-auth'
   gem 'sinatra-google-auth'
+  gem 'github-pages'
  end

@@ -10,7 +10,7 @@ title: "BGH Atlas"
 email: bgh.atlas@gmail.com
 description: "The Atlas is a top-level visual summary of end-member numerical models that the BGH is created."
 baseurl: ""
-url: ""
+url: "https://basin-genesis-hub.github.io/bgh_atlas/"
 twitter_username: "EarthByteGroup"
 github_username:  "basin-genesis-hub"
 color_theme:  "#ff9d00"
