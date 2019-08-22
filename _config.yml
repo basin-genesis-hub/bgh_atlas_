@@ -20,7 +20,7 @@ language:  "en"
 # Build settings
 markdown: kramdown
 permalink: /:title/
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 5
 
 # Plugins

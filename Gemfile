@@ -9,4 +9,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-livereload'
   gem 'omniauth-google-oauth2'
+  gem 'jekyll-auth'
+  gem 'sinatra-google-auth'
  end
