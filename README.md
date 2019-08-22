@@ -82,3 +82,12 @@ The theme is available as open source under the terms of the [MIT License](https
 # Inspired by
 - https://help.market.envato.com/hc/en-us
 - https://www.intercom.com/
+
+
+# Important Commands
+- To set up Heroku: bundle exec jekyll-auth setup --client_id XXX --client_secret XXX --org_name XXX
+- jekyll-auth serve (authentication)
+- jekyll serve (no authentication)
+
+- To find port: lsof -wni tcp:4000
+- To Kill port process: kill -9 "PID"
