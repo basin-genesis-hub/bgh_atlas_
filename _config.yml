@@ -18,15 +18,17 @@ color_theme:  "#ff9d00"
 color_text:  "#fff"
 language:  "en"
 
-exclude:  
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - Vagrantfile
+# exclude:  
+#   - CHANGELOG.md
+#   - CNAME
+#   - Dockerfile
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - README.md
+#   - Vagrantfile
+
+exclude: [vendor]
 
 analytics: UA-143750223-1
 
