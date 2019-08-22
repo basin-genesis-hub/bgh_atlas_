@@ -3,12 +3,12 @@ docs:
   - title: Tectonic models
     desc: Models with tectonic themes
     image: 'tectonic.gif'
-    url: tectonic/
+    url: /tectonic/
   - title: Depositional models
     desc: Models with depositional themes
     image: 'depositional.gif'
-    url: depositional/
+    url: /depositional/
   - title: Coupled models
     desc: Models with coupled themes
     image: 'coupled.gif'
-    url: coupled/
+    url: /coupled/
