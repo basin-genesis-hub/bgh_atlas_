@@ -4,6 +4,8 @@ model_name: 'Continental accretion'
 author: 'Louis Moresi'
 # Software options include Badlands, Underworld or Coupled
 software: 'Underworld' # 
+version: 
+  - 'Underworld 1.0'
 # Provide a category from Depositional, Tectonic or Coupled
 category: 'tectonic' # 
 subcategory: 'compression'

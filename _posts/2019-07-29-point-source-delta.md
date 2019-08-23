@@ -4,6 +4,8 @@ model_name: 'point source delta'
 author: 'Sara Morón'
 # Software options include Badlands, Underworld or Coupled
 software: 'Badlands' #
+version: 
+  - 'Badlands 1.0'
 # Provide a category from Depositional, Tectonic or Coupled
 category: 'surface processes' #
 subcategory: 'fluvio-deltaic'

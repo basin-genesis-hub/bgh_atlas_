@@ -1,14 +1,18 @@
 docs_list_title: Categories
 docs:
-  - title: Tectonic models
-    desc: Models with tectonic themes
+  - title: Underworld models
+    desc: Models using Underworld software
     image: 'tectonic.gif'
-    url: /tectonic/
-  - title: Depositional models
-    desc: Models with depositional themes
+    url: /underworld/
+  - title: Badlands models
+    desc: Models using Badlands software
     image: 'depositional.gif'
-    url: /depositional/
-  - title: Coupled models
-    desc: Models with coupled themes
+    url: /badlands/
+  - title: Badlands-Underworld models
+    desc: Models using Badlands and Underworld software
     image: 'coupled.gif'
-    url: /coupled/
+    url: /badlands-underworld/
+  - title: Badlands-Gplates-Citcom models
+    desc: Models using Badlands, Gplates and Citcom software
+    image: 'coupled.gif'
+    url: /badlands-gplates-citcom/

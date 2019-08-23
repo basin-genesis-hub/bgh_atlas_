@@ -3,7 +3,10 @@ layout: model
 model_name: 'coupled rift'
 author: 'Romain Beucher'
 # Software options include Badlands, Underworld or Coupled
-software: 'Underworld-Badlands' # 
+software: 'Badlands-Underworld' # 
+version: 
+  - 'Underworld 2.0'
+  - 'Badlands 1.0'
 # Provide a category from Depositional, Tectonic or Coupled
 category: 'coupled' # 
 subcategory: 'coupled'
