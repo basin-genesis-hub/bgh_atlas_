@@ -1,5 +1,10 @@
 source 'http://rubygems.org'
 
+gem 'omniauth-google-oauth2'
+gem 'jekyll-auth'
+gem 'sinatra-google-auth'
+gem 'github-pages'
+
 group :jekyll_plugins do
   gem 'jekyll'
   gem 'jekyll-admin'
@@ -8,8 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
   gem 'jekyll-livereload'
-  gem 'omniauth-google-oauth2'
-  gem 'jekyll-auth'
-  gem 'sinatra-google-auth'
-  gem 'github-pages'
  end
+
+
+
