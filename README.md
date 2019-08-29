@@ -39,8 +39,8 @@ docker run --rm --volume="$PWD:/srv/jekyll" \
 jekyll serve
 ```
 
-(wait 1 minute for the docker to download)
-Then in your web browser goto https://localhost:9999
+(wait 1 minute for the docker to download). Once the terminal say `Server running... press ctrl-c to stop.`
+Now open your web browser and goto http://localhost:9999
 
 You can make changes to the post and refresh the browser to see them.
 
