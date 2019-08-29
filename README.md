@@ -1,92 +1,50 @@
-# bgh atlas
+Prepare your .md file in the text editor of your choice following the template XXX
+ 
+Download the repo by typing the following command in the terminal
+git clone https://github.com/basin-genesis-hub/bgh_atlas.git
 
-### To run the website using a docker copy/paste/run this into the terminal
-```bash
+You should now have a directory in your computer called bgh_atlas
+
+Add the .md file (the file that has the model information) to the _posts directory
+
+To view the post in action do the following:
+Make sure that docker desktop is running (that’s the whale icon)
+
+In the terminal go to the bgh_atlas directory (that’s cd bgh_atlas/)  
+
+Run the following command in the terminal at the bgh_atlas directory level
+
 docker run --rm --volume="$PWD:/srv/jekyll" \
 -p 9999:4000 -it julesg/atlas               \
 jekyll serve
-```
-Then go to http://localhost:9999 in your browser
 
-# Examples of posts
-* https://github.com/gustavoquinalha/jekyll-help-center-theme 
-* https://jekyller.github.io/jasper2/the-editor
+(wait 1 minute for the docker to download)
+Then in your web browser type https://localhost:9999
 
-# Embed maps with filterable locations in Jekyll
-* https://github.com/ayastreb/jekyll-maps
+You can make changes to the post and refresh the browser to see them.
 
+Once you are satisfied with the post it’s time to commit it. Let’s assume the post is called 2019-07-01-foobar.md
 
-# Jekyll | Help Center
-Simple and responsive Jekyll theme for help center.
+In another terminal go to the bgh_atlas directory level and run the following commands
 
-# Demo
-[Demo online](https://gustavoquinalha.github.io/jekyll-help-center-theme/)
+To Get the latest changes run 
+git pull 
+To see what has changed run
+git status
+To stage the new post run 
+git add _posts/2019-07-01-foobar.md
+To commit the new post run 
+git commit -m “Your message about the post”
+To upload the local changes to the remote repository 
+git push
 
-![Color Theme](http://quinalha.me/jekyll-help-center-theme/assets/img/readme/responsive.png)
-
-# Color theme
-edit in _config.yml
-```
-color_theme:  "#0081ff"
-color_text:  "#fff"
-```
-
-# Install
-```
-git clone https://github.com/gustavoquinalha/jekyll-help-center-theme
-```
-or
-```
-gem install jekyll-help-center-theme
-```
-https://rubygems.org/gems/jekyll-help-center-theme
-
-# How to use
-```
-bundle exec jekyll serve --livereload --watch
-```
-Server address
-```
-localhost:4000/jekyll-help-center-theme/
-```
-
-# Post Example
-```
----
-layout: post
-title: 'First category'
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-date: 2017-11-12 17:46:41 -0300
-categories: start blog
-by: 'Gustavo Quinalha'
-icon: 'credit-card'
-questions:
-  - question: 'Question 1'
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    image: "1.gif"
-  - question: 'Question 2'
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    image: "2.gif"
-  - question: 'Question 3'
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    image: "3.gif"
-  - question: 'Question 4'
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    image: "4.gif"
----
-```
-## License
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-# Inspired by
-- https://help.market.envato.com/hc/en-us
-- https://www.intercom.com/
+Et voilà! your model should appear in https://basin-genesis-hub.github.io/bgh_atlas/ under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
 
 
-# Important Commands
-- To set up Heroku: bundle exec jekyll-auth setup --client_id XXX --client_secret XXX --org_name XXX
-- jekyll-auth serve (authentication)
-- jekyll serve (no authentication)
+If the following steps are not working for you do not fear! 
 
-- To find port: lsof -wni tcp:4000
-- To Kill port process: kill -9 "PID"
+Login into your github
+Go to https://github.com/basin-genesis-hub/bgh_atlas/tree/master/_posts
+Upload your .md file by clicking on the upload files tab and dragging the file
+Commit the file by clicking on commit changes 
+Your changes will be accepted by the BGH-Atlas team, but you won’t be able to see your model post straight the way.
