@@ -56,7 +56,7 @@ git push
 Et voilà! your model should appear in https://basin-genesis-hub.github.io/bgh_atlas/ under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
 
 
-#If the following steps are not working for you do not fear! 
+# If the following steps are not working for you do not fear! 
 Login into your github
 Go to https://github.com/basin-genesis-hub/bgh_atlas/tree/master/_posts
 Upload your .md file by clicking on the upload files tab and dragging the file
