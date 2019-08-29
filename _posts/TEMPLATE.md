@@ -52,7 +52,7 @@ conditions:
     value: 50
   description: 'Viscosity, density and yield strength for each of the domains in the model setup for a 80-Myr-old lithosphere'
 
-# Provide results in an image or text description
+# Provide results in an image and a text description
 result:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_results.jpg'
   description: 'A comparison of velocities during collision, accretion and recovery. Shown are the velocities of the subducting plate (black lines), the retreating end of the plate boundary (‘Trench retreat rate’, green), the colliding end of the plate boundary ‘Trench advance rate’, red), and the cusp of the laterally retreating trench (‘Lateral rollback rate’, blue). Negative velocities indicate retreat, positive velocities indicate advance.'
