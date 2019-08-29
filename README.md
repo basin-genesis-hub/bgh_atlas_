@@ -1,7 +1,7 @@
-# How to upload your model to the BGH atlas?
+# Welcome to the BGH atlas repo
  
  
-# What do you need?
+# What do you need to upload your model to the BGH atlas?
 * Your github login details
 * A short and sweet description of what your model does
 * An animation of your model
@@ -11,9 +11,11 @@
 * A descriptive close caption for the fig/tables/animations listed above
 
 
-# Prepare your .md file in the text editor of your choice following the template XXX
+# How to upload your model to the BGH atlas?
+
+Prepare your .md file in the text editor of your choice following the template XXX
  
-Download the repo by typing the following command in the terminal
+Download this repo into your computer by typing the following command in the terminal
 git clone https://github.com/basin-genesis-hub/bgh_atlas.git
 
 You should now have a directory in your computer called bgh_atlas
