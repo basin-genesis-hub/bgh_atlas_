@@ -1,7 +1,7 @@
-#How to make upload your model to the BGH atlas?
+# How to upload your model to the BGH atlas?
  
  
-#What do you need?
+# What do you need?
 ·       Your github login details
 ·       A short and sweet description of what your model does
 ·       An animation of your model
