@@ -42,22 +42,21 @@ Once you are satisfied with the post it’s time to commit it. Let’s assume th
 
 In another terminal go to the bgh_atlas directory level and run the following commands
 
-To Get the latest changes run 
+* To Get the latest changes run 
 git pull 
-To see what has changed run
+* To see what has changed run
 git status
-To stage the new post run 
+* To stage the new post run 
 git add _posts/2019-07-01-foobar.md
-To commit the new post run 
+* To commit the new post run 
 git commit -m “Your message about the post”
-To upload the local changes to the remote repository 
+* To upload the local changes to the remote repository 
 git push
 
 Et voilà! your model should appear in https://basin-genesis-hub.github.io/bgh_atlas/ under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
 
 
-If the following steps are not working for you do not fear! 
-
+#If the following steps are not working for you do not fear! 
 Login into your github
 Go to https://github.com/basin-genesis-hub/bgh_atlas/tree/master/_posts
 Upload your .md file by clicking on the upload files tab and dragging the file
