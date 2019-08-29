@@ -38,7 +38,7 @@ layout: default
           </div>
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
-              <br><br>
+              <br>
               {% if page.animation.url %}
               <div >
                 <!-- {{page.animation.url}} -->
@@ -49,11 +49,11 @@ layout: default
               </div>
               {% endif %}
 
-              <br><br>
+              <br>
 
               {% if page.model_setup.url %}
               <h3 class="list-post-title">
-              Model Setup: 
+              Model Setup: <br>
               </h3>
               
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
@@ -62,11 +62,11 @@ layout: default
               </div>
               {% endif %}
 
-              <br><br>
+              <br>
               
               {% if page.conditions.url %}
               <h3 class="list-post-title">
-              Conditions: 
+              Conditions: <br>
               </h3>
               
               {% if page.conditions.table %}
@@ -105,11 +105,11 @@ layout: default
               </div>
               {% endif %} -->
 
-              <br><br>
+              <br>
               
               {% if page.result.url %}
               <h3 class="list-post-title">
-              Results: 
+              Results: <br> 
               </h3>
               <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
               <img src="{{ page.result.url}}" width="100%" alt=""/>
@@ -117,11 +117,11 @@ layout: default
               </div>
               {% endif %}
  
-              <br><br>
+              <br>
               
               {% if page.citation %}
               <h3 class="list-post-title">
-              Citation: 
+              Citation:  <br> 
               </h3>
               <a href="{{page.citation}}/">{{page.citation}}</a>
               {% endif %}
