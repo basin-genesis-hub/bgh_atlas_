@@ -19,10 +19,10 @@ version:
 # Provide a category from Depositional, Tectonic or Coupled
 category: 'Tectonic' 
 
-# Provide a sub category such as Compression, Extension, Strike-slip for Tectonic and so on.
+# Provide a sub category such as Compression, Extension, Strike-slip, Conceptual, Case-study.
 subcategory: 'Compression'
 
-# Provide a thumbnail image to be displayed with the list entry (Optional)
+# Provide a thumbnail image to be displayed with the list entry.  
 thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/SlabPlateauCollision_white_background.jpg'
 
 # Please do not change the icon field
