@@ -2,16 +2,16 @@
  
  
 # What do you need?
-·       Your github login details
-·       A short and sweet description of what your model does
-·       An animation of your model
-·       A figure of your model setup
-·       A table or a figure of the conditions for your model
-·       A figure showing the main results of your model
-·       A descriptive close caption for the fig/tables/animations listed above
+* Your github login details
+* A short and sweet description of what your model does
+* An animation of your model
+* A figure of your model setup
+* A table or a figure of the conditions for your model
+* A figure showing the main results of your model
+* A descriptive close caption for the fig/tables/animations listed above
 
 
-#Prepare your .md file in the text editor of your choice following the template XXX
+# Prepare your .md file in the text editor of your choice following the template XXX
  
 Download the repo by typing the following command in the terminal
 git clone https://github.com/basin-genesis-hub/bgh_atlas.git
