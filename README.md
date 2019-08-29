@@ -40,7 +40,7 @@ jekyll serve
 ```
 
 (wait 1 minute for the docker to download). Once the terminal say `Server running... press ctrl-c to stop.`
-Now open your web browser and goto http://localhost:9999
+The jekyll server is ready! Open your web browser and goto http://localhost:9999
 
 You can make changes to the post and refresh the browser to see them.
 
