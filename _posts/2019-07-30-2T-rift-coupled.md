@@ -1,7 +1,8 @@
 ---
 layout: model
 model_name: 'coupled rift'
-author: 'Romain Beucher'
+author: 
+  - 'Romain Beucher'
 # Software options include Badlands, Underworld or Coupled
 software: 'Badlands-Underworld' # 
 version: 
@@ -15,8 +16,8 @@ thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/B
 icon: globe
 # Animations to display
 animation:
-  gifs: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Tutorial11.gif'
-  gdesc: 'This is a rifting thermo-mechanical model coupled between Underworld and Badlands.'
+  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Tutorial11.gif'
+  description: 'This is a rifting thermo-mechanical model coupled between Underworld and Badlands.'
 #Model setup
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Beucher_2T_rift_setup.png'

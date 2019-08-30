@@ -6,4 +6,6 @@ FAQ
 
 - Make image and description clickable
 
+- Single quotes on message in commit command
+
 - 

@@ -6,7 +6,9 @@ layout: model
 model_name: 'Continental accretion'
 
 # Tell us about the authors. In case of more than one: 'X, Y, Z'
-author: 'Louis Moresi'
+author: 
+  - 'Louis Moresi'
+  - 'Patrice Rey'
 
 # Tell us the software used for the model. Softwares include Underworld, Badlands, Badlands-Underworld, Badlands-GPlates-CitcomS
 software: 'Underworld' # 
@@ -27,13 +29,12 @@ thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/S
 
 # Please do not change the icon field
 icon: 'globe'
-
-# Provide an animation gif to display along with a description
+  
+# Provide an animation video (mp4) to display along with a description
 animation:
-  gifs: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/CollisionView6.gif'
-  gdesc: 'This 3D mechanical model explores the dynamics of continental accretion by including a subducting slab, and overriding plate and mantle dynamics. The model displays the following phases: (1) a collisional stage when the microcontinental ribbon initially accretes to the overriding plate; (2) a transitional stage where the convergent subducting plate and trench reorganize through coeval trench advance and retreat in different parts of the boundary; and (3) the re-initiation of a stable subduction system behind the accreted microcontinent.'
-  video: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/strati_bgh_quick.mp4'
-  vdesc: 'This is a sample video'
+  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/strati_bgh_quick.mp4'
+  description: 'This is a sample video'
+
 # Provide an image to display for the model setup along with a description
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_setup.jpg'

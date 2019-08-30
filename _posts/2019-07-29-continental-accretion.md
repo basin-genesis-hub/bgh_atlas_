@@ -1,7 +1,9 @@
 ---
 layout: model
 model_name: 'Continental accretion'
-author: 'Louis Moresi'
+author:
+  - 'Patrice Rey'
+  - 'Louis Moresi'
 # Software options include Badlands, Underworld or Coupled
 software: 'Underworld' # 
 version: 
@@ -14,8 +16,8 @@ subcategory: 'compression'
 icon: 'globe'
 # Animations to display
 animation:
-  gifs: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/CollisionView6.gif'
-  gdesc: 'This 3D mechanical model explores the dynamics of continental accretion by including a subducting slab, and overriding plate and mantle dynamics. The model displays the following phases: (1) a collisional stage when the microcontinental ribbon initially accretes to the overriding plate; (2) a transitional stage where the convergent subducting plate and trench reorganize through coeval trench advance and retreat in different parts of the boundary; and (3) the re-initiation of a stable subduction system behind the accreted microcontinent.'
+  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/CollisionView6.gif'
+  description: 'This 3D mechanical model explores the dynamics of continental accretion by including a subducting slab, and overriding plate and mantle dynamics. The model displays the following phases: (1) a collisional stage when the microcontinental ribbon initially accretes to the overriding plate; (2) a transitional stage where the convergent subducting plate and trench reorganize through coeval trench advance and retreat in different parts of the boundary; and (3) the re-initiation of a stable subduction system behind the accreted microcontinent.'
 #Model setup
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_setup.jpg'

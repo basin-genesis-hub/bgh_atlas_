@@ -18,6 +18,8 @@ color_theme:  "#ff9d00"
 color_text:  "#fff"
 language:  "en"
 
+logo: site_resources/BasinGensisHub.png
+
 # exclude:  
 #   - CHANGELOG.md
 #   - CNAME
@@ -33,7 +35,7 @@ exclude: [vendor]
 analytics: UA-143750223-1
 
 jekyll_auth:
-  ssl: true
+  ssl: false
 
 # Build settings
 markdown: kramdown

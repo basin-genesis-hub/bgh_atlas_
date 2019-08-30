@@ -15,7 +15,15 @@ layout: default
     <h1 class="post-title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">{{ page.model_name }}</h1>
     <div class="post-date" data-aos="fade-left" data-aos-delay="300" data-aos-offset="0">
       <!-- <time>{{ page.date | date_to_string }}</time> -->
-      <span class="reading-time" title=" Author ">{{ page.author }}</span>
+      <span class="reading-time" title=" Author ">
+      {% for a in page.author %}
+        {% if forloop.last == true %}
+          {{a}}
+        {% else %}
+           {{a}} , 
+        {% endif %}
+      {% endfor %}
+      </span>
     </div>
     <!-- titles -->
     <!-- posts -->
@@ -39,18 +47,6 @@ layout: default
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
               <br>
-              {% if page.animation.gifs %}
-              <div >
-                <!-- {{page.animation.url}} -->
-                <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                <img src="{{page.animation.gifs}}" width="100%" alt="">
-                </div>
-              {{page.animation.gdesc}}
-              </div>
-              {% endif %}
-
-              <br>
-
               {% if page.animation.video %}
               <div >
                 <!-- {{page.animation.url}} -->
