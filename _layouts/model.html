@@ -39,16 +39,32 @@ layout: default
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
               <br>
-              {% if page.animation.url %}
+              {% if page.animation.gifs %}
               <div >
                 <!-- {{page.animation.url}} -->
                 <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                <img src="{{page.animation.url}}" width="100%" alt="">
+                <img src="{{page.animation.gifs}}" width="100%" alt="">
                 </div>
-              {{page.animation.description}}
+              {{page.animation.gdesc}}
               </div>
               {% endif %}
 
+              <br>
+
+              {% if page.animation.video %}
+              <div >
+                <!-- {{page.animation.url}} -->
+                <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                <video width="700" height="350" controls>
+                  <source src="{{page.animation.video}}" type="video/mp4">
+                  <source src="{{page.animation.video}}" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                </div>
+              {{page.animation.vdesc}}
+              </div>
+              {% endif %}
+              
               <br>
 
               {% if page.model_setup.url %}

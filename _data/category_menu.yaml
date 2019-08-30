@@ -12,7 +12,7 @@ docs:
     desc: Models using Badlands and Underworld software
     image: 'coupled.gif'
     url: /badlands-underworld/
-  - title: Badlands-Gplates-Citcom models
-    desc: Models using Badlands, Gplates and Citcom software
+  - title: Badlands-GPlates-CitcomS models
+    desc: Models using Badlands, GPlates and CitcomS software
     image: 'coupled.gif'
     url: /badlands-gplates-citcom/
