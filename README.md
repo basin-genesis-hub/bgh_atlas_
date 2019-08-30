@@ -62,7 +62,7 @@ git add _posts/2019-07-01-foobar.md
 ```
 * To commit the new post run 
 ```bash
-git commit -m “Your message about the post”
+git commit -m 'Your message about the post'
 ```
 * To upload the local changes to the remote repository 
 ```bash
