@@ -1,7 +1,8 @@
 ---
 layout: model
 model_name: 'McClay style experiment suite'
-author: 'Patrice F Rey'
+author: 
+  - 'Patrice F Rey'
 # Software options include Badlands, Underworld or Coupled
 software: 'Underworld' # 
 version: 
@@ -14,10 +15,8 @@ subcategory: 'extension'
 icon: 'globe'
 # Provide an animation gif to display along with a description
 animation:
-  gifs: ''
-  gdesc: ''
-  video: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/A_McClay200_nomghr_Insta-1.mp4'
-  vdesc: 'This is a sample video'
+  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/A_McClay200_nomghr_Insta-1.mp4'
+  description: 'This is a sample video'
 #Model setup
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/McClay100.0004.png'

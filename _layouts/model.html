@@ -47,17 +47,17 @@ layout: default
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
               <br>
-              {% if page.animation.video %}
+              {% if page.animation.mp4 %}
               <div >
                 <!-- {{page.animation.url}} -->
                 <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                <video width="700" height="350" controls>
+                <video width="720" height="360" controls>
                   <source src="{{page.animation.video}}" type="video/mp4">
                   <source src="{{page.animation.video}}" type="video/ogg">
                   Your browser does not support the video tag.
                 </video>
                 </div>
-              {{page.animation.vdesc}}
+              {{page.animation.description}}
               </div>
               {% endif %}
               
