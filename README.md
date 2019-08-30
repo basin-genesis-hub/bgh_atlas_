@@ -48,7 +48,7 @@ Once you are satisfied with the post it’s time to commit it. Let’s assume th
 
 In another terminal go to the bgh_atlas directory level and run the following commands
 
-* To Get the latest changes run 
+* To Get the latest changes/update your repository run 
 ```bash
 git pull 
 ```
@@ -62,7 +62,7 @@ git add _posts/2019-07-01-foobar.md
 ```
 * To commit the new post run 
 ```bash
-git commit -m “Your message about the post”
+git commit -m 'Your message about the post'
 ```
 * To upload the local changes to the remote repository 
 ```bash
