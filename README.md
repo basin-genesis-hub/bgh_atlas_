@@ -48,7 +48,7 @@ Once you are satisfied with the post it’s time to commit it. Let’s assume th
 
 In another terminal go to the bgh_atlas directory level and run the following commands
 
-* To Get the latest changes run 
+* To Get the latest changes/update your repository run 
 ```bash
 git pull 
 ```
