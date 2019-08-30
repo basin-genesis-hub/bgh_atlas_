@@ -15,8 +15,8 @@ thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/B
 icon: globe
 # Animations to display
 animation:
-  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Tutorial11.gif'
-  description: 'This is a rifting thermo-mechanical model coupled between Underworld and Badlands.'
+  gifs: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Tutorial11.gif'
+  gdesc: 'This is a rifting thermo-mechanical model coupled between Underworld and Badlands.'
 #Model setup
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Beucher_2T_rift_setup.png'
