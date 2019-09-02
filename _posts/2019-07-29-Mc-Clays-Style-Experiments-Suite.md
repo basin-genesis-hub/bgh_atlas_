@@ -13,10 +13,10 @@ subcategory: 'extension'
 # Image to display on the menu
 #thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/PR229_88.png'
 icon: 'globe'
-# Provide an animation gif to display along with a description
+# Provide an animation video (mp4) to display along with a description
 animation:
   mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/A_PR221b.mp4'
-  description: 'This is a sample video'
+  description: ''
 #Model setup
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/McClay_InternalCondition-1.png'
