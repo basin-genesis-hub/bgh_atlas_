@@ -46,6 +46,7 @@ conditions:
   table:
   - Parameter: precipitation [m/a]
     value: 1
+		value: 2
   - Parameter: erodibility coefficient
     value: 4.e-7
  
