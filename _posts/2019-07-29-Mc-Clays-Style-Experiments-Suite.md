@@ -24,14 +24,14 @@ model_setup:
 # Describe the conditions/parameters for the models in a table or image
 conditions:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/Parameters.png'
-  description: 'Parameters values'
+  description: ''
 # Give text for model results
 result:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/A_StInv221b.mp4'
   description: 'This suite of experiments demonstrates that our *Underworld* 2D template is capable of delivering model outputs comparable to some of the best sandbox experiments facilities. Some of the advantages of our numerical sandox template include: i/ speed, as models can be set up in minutes and dozens of them can run in 24 to 48 hours or less; ii/ our numerical experiments keep track of temperature, stress, strain rate, and accumulated strain; iii/ the pressure- and temperature-dependent density and rheology of each individual layers can be specified; iv/ isostasy can be accounted for; and v/ our template allows for time-dependent boundary conditions and simple surface processes'
 
 # Give citation or DOI for paper
-citation: ''
+citation: 'Patrice F Rey, 2019:'
 
 # Online pointer to your model (Git/Binder/FTP etc.)
 model_url: ''
