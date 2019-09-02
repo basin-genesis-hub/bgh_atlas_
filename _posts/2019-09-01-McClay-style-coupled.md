@@ -3,12 +3,11 @@
 layout: model
 
 # Give your model name
-model_name: 'McClay style experiments suite'
+model_name: 'McClay-Style Experiments Suite'
 
 # Tell us about the authors. In case of more than one: 'X, Y, Z'
 author: 
-  - 'Patrice Rey'
-  - ''
+  - 'Patrice F. Rey - BGH and Earthbyte Research Group, The University of Sydney'
 
 # Tell us the software used for the model. Softwares include Underworld, Badlands, Badlands-Underworld, Badlands-GPlates-CitcomS
 software: 'Underworld' # 
