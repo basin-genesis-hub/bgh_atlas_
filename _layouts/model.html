@@ -51,9 +51,11 @@ layout: default
               <div >
                 <!-- {{page.animation.url}} -->
                 <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                <video width="720" height="360" controls>
-                  <source src="{{page.animation.video}}" type="video/mp4">
-                  <source src="{{page.animation.video}}" type="video/ogg">
+                <video autoplay loop muted preload="auto" width="720" height="360" controls>
+                  <source src="{{page.animation.mp4}}" type="video/mp4">
+                  <source src="{{page.animation.mp4}}" type="video/ogg">
+                  <source src="{{page.animation.mp4}}" type="video/ogv">
+                  <source src="{{page.animation.mp4}}" type="video/webm">
                   Your browser does not support the video tag.
                 </video>
                 </div>

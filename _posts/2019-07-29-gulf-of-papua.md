@@ -12,7 +12,7 @@ category: 'surface processes' #
 subcategory: 'PNG'
 # Image to display on the menu
 thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Initial.png'
-icon: 'globe'
+icon: 'glob'
 # Animations to display
 animation:
   mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/GoP_35-0Ka-1.gif'
