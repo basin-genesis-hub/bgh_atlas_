@@ -20,6 +20,7 @@ language:  "en"
 
 logo: site_resources/BasinGensisHub.png
 
+future: true
 # exclude:  
 #   - CHANGELOG.md
 #   - CNAME
