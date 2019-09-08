@@ -2,8 +2,8 @@
 layout: model
 model_name: 'Continental accretion'
 author:
-  - 'Patrice Rey'
   - 'Louis Moresi'
+  - ''
 # Software options include Badlands, Underworld or Coupled
 software: 'Underworld' # 
 version: 
