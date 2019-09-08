@@ -21,17 +21,17 @@ version:
 category: 'Coupled' 
 
 # Provide a sub category such as Compression, Extension, Strike-slip, Conceptual, Case-study.
-subcategory: 'Extension'
+subcategory: 'Strike-slip'
 
 # Provide a thumbnail image to be displayed with the list entry.  
-thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/PR229_88.png'
+thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/PA000x0055.jpg'
 
 # Please do not change the icon field
 icon: 'globe'
   
 # Provide an animation video (mp4) to display along with a description
 animation:
-  mp4: "https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/A_PR221b.mp4"
+  mp4: "https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/A_PA000x.mp4"
   description: ''
 
 # Provide an image to display for the model setup along with a description
@@ -157,8 +157,8 @@ conditions:
 
 # Provide results in an image and a text description
 result:
-  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/PR229_88.png'
-  description: 'This model allows us to compare the outcomes of Underworld 1.8 and Underworld Geodynamics. We found that in Underworld 1.8 the fractures field is sharper with better defined faults that includes a range of fracture types (extensional fractures, shear fractures, ridel R and R'). In comparison in Underworld Geodynamics the region of plastic deformation is far less detailed.'
+  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/Internal10myr.jpg'
+  description: 'This model allows us to compare the outcomes of Underworld 1.8 and Underworld Geodynamics. We found that in Underworld 1.8 the fractures field is sharper with better defined faults that includes a range of fracture types (extensional fractures, shear fractures, ridel R and R'). In comparison in Underworld Geodynamics the region of plastic deformation is far less detailed. In terms of stress differences ... '
 
 # Provide citation or DOI for paper
 citation: 'Rey, Salles, Mallard, Hardiman and Beucher 2019:'
