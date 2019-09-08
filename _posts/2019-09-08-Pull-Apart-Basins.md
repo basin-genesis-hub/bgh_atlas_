@@ -10,8 +10,7 @@ author:
   - 'Patrice F. Rey, Tristan Salles, Claire Mallard, Luke Hardiman, Romain Beucher - BGH and Earthbyte Research Group, The University of Sydney, patrice.rey@sydney.edu.au'
 
 # Tell us the software used for the model. Softwares include Underworld, Badlands, Badlands-Underworld, Badlands-GPlates-CitcomS
-software: 'Underworld' 
-          'Badlands'
+software: 'Badlands-Underworld' 
 
 # Tell us about the particular version of software. In case of multiple, mention them in a list format by adding a bullet dash in the next line as shown
 version: 
