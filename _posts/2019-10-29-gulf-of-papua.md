@@ -15,7 +15,7 @@ thumbnail: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/I
 icon: 'globe'
 # Animations to display
 animation:
-  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/GoP_35-0Ka-1.gif'
+  mp4: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/GoP_35-0Ka-1.mp4'
   description: 'This model simulates the Late Quaternary landscape evolution of the Gulf of Papua, examining source-to-sink sediment transfer assuming a uniform erodibility coefficient. The simulation includes the surface uplift and subsidence history of the Gulf and uses present day precipitation rates. The simulation shows sediment delivered to the Gulf of Papua primarily by the Fly, Kikori and Purari Rivers and deposited in the western deep-sea basin, with shorter rivers draining the Papuan Peninsula contributing to sedimentation in the eastern Gulf. Sea level rise over the past 16 Kyr prevents the rivers draining the mainland from depositing directly into the deep-sea, with sediment becoming trapped on the submerged continental shelf.'
 #Model setup
 model_setup:
