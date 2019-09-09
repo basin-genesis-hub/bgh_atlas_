@@ -5,7 +5,7 @@ author:
   - 'Laura Harrington, S. Zahirovic, T. Salles, C. Braz & R.D. Müller'
 
 # Software options include Badlands, Underworld or Coupled
-software: 'Badlands-Gplates-CitcomS' #
+software: 'Badlands-Gplates-Citcoms' #
 version: 
   - 'Badlands 1.0'
   -  'Gplates'
@@ -67,7 +67,7 @@ superswell at this time, our models suggest that the region
 experienced a broad increase in elevation.'
 
 # Give citation or DOI for paper
-citation:  'HARRINGTON, L., ZAHIROVIC, S., SALLES, T., BRAZ, C. & MüLLER, R.D., 2019, Tectonic, geodynamic and surface process driving forces of Australia’s paleogeography since the Jurassic, in KEEP, M. & MOSS, S.J. (Eds), The Sedimentary Basins of Western Australia V: Proceedings of the Petroleum Exploration Society of Australia Symposium, Perth, WA, 2019, 29 pp. https://www.pesa.com.au/library/harrington-final-pdf/'
+citation: 'HARRINGTON, L., ZAHIROVIC, S., SALLES, T., BRAZ, C. & MüLLER, R.D., 2019, Tectonic, geodynamic and surface process driving forces of Australia’s paleogeography since the Jurassic, in KEEP, M. & MOSS, S.J. (Eds), The Sedimentary Basins of Western Australia V: Proceedings of the Petroleum Exploration Society of Australia Symposium, Perth, WA, 2019, 29 pp. https://www.pesa.com.au/library/harrington-final-pdf/'
 
 # Online pointer to your model (Git/Binder/FTP etc.)
 model_url: 'https://github.com/saraemp/delta'
