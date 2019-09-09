@@ -14,5 +14,5 @@ docs:
     url: /badlands-underworld/
   - title: Badlands-GPlates-CitcomS models
     desc: Models using Badlands, GPlates and CitcomS software
-    image: 'coupled.gif'
+    image: 'citcoms.gif'
     url: /badlands-gplates-citcom/
