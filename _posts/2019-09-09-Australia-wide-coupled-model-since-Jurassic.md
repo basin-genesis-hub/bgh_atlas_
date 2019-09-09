@@ -1,14 +1,14 @@
 ---
 layout: model
-model_name: 'Australia wide coupled model since the Jurassic'
+model_name: 'Australia’s paleogeography since the Jurassic'
 author: 
-  - 'Laura Harrington, S. Zahirovic, T. Salles, C. Braz & R.D. Müller'
+  - 'Laura Harrington, S. Zahirovic, T. Salles, C. Braz & R.D. Müller'
 
 # Software options include Badlands, Underworld or Coupled
-software: 'Badlands-Gplates-CitcomS' #
+software: 'Badlands-Gplates-Citcoms' #
 version: 
   - 'Badlands 1.0'
-  - 'Gplates'
+  -  'Gplates'
   - 'CitcomS'
 # Provide a category from Depositional, Tectonic or Coupled
 category: 'surface processes' #
@@ -23,8 +23,9 @@ animation:
 #Model setup
 model_setup:
   url : 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/aus040_ED_res_PT.jpg'
-  description: 'This model couples global plate tectonic reconstructions
-provided by Müller et al. (2016) with mantle flow experiments
+  description: 'Plate tectonic reconstructions
+This study coupled global plate tectonic reconstructions
+provided by Müller et al. (2016) with mantle flow experiments
 to model the evolving mantle structure for the post-Pangea
 timeframe. In addition to incorporating relative motion between
 plates, the tectonic reconstructions presented here use a hybrid
@@ -32,7 +33,7 @@ absolute reference frame based on a moving hotspot model
 from Torsvik et al. (2008) from 0–70 Ma, and a true polar wander
 corrected paleomagnetic model from Steinberger & Torsvik
 (2008) for older times, allowing for a 35 Myr transition period
-(70–105 Ma) from one reference frame to the other (Müller et
+(70–105 Ma) from one reference frame to the other (Müller et
 al., 2016). A key feature of these plate reconstructions is the
 algorithm that generates time-evolving and topologically-closed
 plate polygons (Gurnis et al., 2012). These global plate topologies
@@ -43,7 +44,7 @@ et al., 2012).'
 conditions:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/HARRINGTON-FINAL-dragged.jpg'
   table: ''
-  
+
 # Give text for model results
 result:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/09/aus040_ED_res.png'
@@ -66,7 +67,7 @@ superswell at this time, our models suggest that the region
 experienced a broad increase in elevation.'
 
 # Give citation or DOI for paper
-citation:  'HARRINGTON, L., ZAHIROVIC, S., SALLES, T., BRAZ, C. & MüLLER, R.D., 2019, Tectonic, geodynamic and surface process driving forces of Australia’s paleogeography since the Jurassic, in KEEP, M. & MOSS, S.J. (Eds), The Sedimentary Basins of Western Australia V: Proceedings of the Petroleum Exploration Society of Australia Symposium, Perth, WA, 2019, 29 pp. https://www.pesa.com.au/library/harrington-final-pdf/'
+citation: 'HARRINGTON, L., ZAHIROVIC, S., SALLES, T., BRAZ, C. & MüLLER, R.D., 2019, Tectonic, geodynamic and surface process driving forces of Australia’s paleogeography since the Jurassic, in KEEP, M. & MOSS, S.J. (Eds), The Sedimentary Basins of Western Australia V: Proceedings of the Petroleum Exploration Society of Australia Symposium, Perth, WA, 2019, 29 pp. https://www.pesa.com.au/library/harrington-final-pdf/'
 
 # Online pointer to your model (Git/Binder/FTP etc.)
 model_url: ''
