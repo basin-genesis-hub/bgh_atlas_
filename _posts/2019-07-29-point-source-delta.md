@@ -23,7 +23,6 @@ model_setup:
   description: 'The initial configuration of the modeling domain resembles the topography of a natural source to sink system with relief on the headwaters, a decrease in slope on the continental plain and successive changes on the gradient of the continental shelf and the continental slope. To ensure that our simulations mimic a funnel-like drainage basin shape in the continental domain and sediment is delivered to the marine domain through a point-source we imposed a longitudinal topographic low in the middle of the modeling domain.'
 # Describe the conditions/parameters for the models in a table or image
 conditions:
-  url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/07/Moresi__et_al_2014_BC-1.jpg'
   table:
   - Parameter: precipitation [m/a]
     value: 1
