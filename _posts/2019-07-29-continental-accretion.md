@@ -2,7 +2,7 @@
 layout: model
 model_name: 'Continental accretion'
 author:
-  - 'Louis Moresi'
+  - 'L. Moresi, P. G. Betts, M. S. Miller & R. A. Cayley'
   - ''
 # Software options include Badlands, Underworld or Coupled
 software: 'Underworld' # 
