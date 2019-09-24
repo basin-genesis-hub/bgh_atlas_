@@ -84,21 +84,6 @@ Commit the file by clicking on commit changes
 Your changes will be accepted by the BGH-Atlas team, but you won’t be able to see your model post straight the way.
 
 # Comment on the animations
-All the animations have to be in gif
+All the animations have to be in .mp4
 
-To convert the videos to gif use ffmpeg. If it is not installed in your computer run the following in the command line  
-
-```bash
-$ brew install ffmpeg
-```
-Now you should have ffmpeg
-
-Then run the following
-```bash
-ffmpeg -i MVI_6654.MOV firsttry.gif
-```
-For more information about resolution, color conversion and animation editing check 
-
-https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483
-
-To obtained a url for the all images and animations, store them in the bgh word press
+To obtain a url for the all images and animations, store them in the bgh word press under media, copy the url and paste it in the yaml under the appropiate field. 
