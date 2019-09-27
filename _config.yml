@@ -36,7 +36,7 @@ exclude: [vendor]
 analytics: UA-143750223-1
 
 jekyll_auth:
-  ssl: false
+  ssl: true
 
 # Build settings
 markdown: kramdown
