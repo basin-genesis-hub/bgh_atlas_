@@ -90,3 +90,7 @@ The theme is available as open source under the terms of the [MIT License](https
 
 - To find port: lsof -wni tcp:4000
 - To Kill port process: kill -9 "PID"
+
+
+# Ideas for authentication
+https://github.com/lllychen/jekyll-firewall
