@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: source
+
+publish_mode: editorial_workflow
+
+media_folder: "images"
+
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "_posts"
+    create: true
+    slug: "---"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "page"
+    label: "Page"
+    folder: "_pages"
+    create: true
+    slug: ".md"
+    fields:
+      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "//"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "layouts"
+    label: "Layouts"
+    folder: "_layouts"
+    extension: "html"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
