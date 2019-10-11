@@ -1,17 +1,17 @@
 docs_list_title: Categories
 docs:
-  - title: Underworld models
-    desc: Models using Underworld software
-    image: 'tectonic.gif'
-    url: /underworld/
-  - title: Badlands models
-    desc: Models using Badlands software
-    image: 'depositional.gif'
-    url: /badlands/
   - title: Badlands-Underworld models
     desc: Models using Badlands and Underworld software
     image: 'coupled.gif'
     url: /badlands-underworld/
+  - title: Badlands models
+    desc: Models using Badlands software
+    image: 'depositional.gif'
+    url: /badlands/
+  - title: Underworld models
+    desc: Models using Underworld software
+    image: 'tectonic.gif'
+    url: /underworld/
   - title: Badlands-GPlates-CitcomS models
     desc: Models using Badlands, GPlates and CitcomS software
     image: 'citcoms.gif'
