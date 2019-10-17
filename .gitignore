@@ -6,3 +6,5 @@ jekyll-help-center-theme.gemspec
 node_modules
 vendor/*
 .bundle/*
+
+resolution_change

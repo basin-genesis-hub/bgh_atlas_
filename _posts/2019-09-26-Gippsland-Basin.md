@@ -42,37 +42,37 @@ model_setup:
 conditions:
   url: ''
   table:
-  - Uncertainties/Variables：Non Marine Erodibility
+  - Uncertainties/Variables: Non Marine Erodibility
     Parameter: erodibility
     value: 2.e-7
-  - Uncertainties/Variables：Rainfall
+  - Uncertainties/Variables: Rainfall
     Parameter: precipitation [m/a]
     value: ∝ Elevation
-  - Uncertainties/Variables：(Rainfall * Area) exponent m
+  - Uncertainties/Variables: (Rainfall * Area) exponent m
     Parameter: m
     value: 0.5
-  - Uncertainties/Variables：Slope exponent n
+  - Uncertainties/Variables: Slope exponent n
     Parameter: n
     value: 1.2
-  - Uncertainties/Variables：Slope Minimum for Flood-plain Deposition
+  - Uncertainties/Variables: Slope Minimum for Flood-plain Deposition
     Parameter: slp_cr
     value: 0.001
-  - Uncertainties/Variables：Non-Marine % Max Deposition
+  - Uncertainties/Variables: Non-Marine % Max Deposition
     Parameter: perc_dep
     value: 0.4
-  - Uncertainties/Variables：Land sed. Transport by River
+  - Uncertainties/Variables: Land sed. Transport by River
     Parameter: criver
     value: 10
-  - Uncertainties/Variables：Land sed. Transport by Wind
+  - Uncertainties/Variables: Land sed. Transport by Wind
     Parameter: caerial
     value: 0.001
-  - Uncertainties/Variables：Lake/Sea sed. Transport by Currents
+  - Uncertainties/Variables: Lake/Sea sed. Transport by Currents
     Parameter: cmarine
     value: 0.005
-  - Uncertainties/Variables：No. Time Steps To Distribute Marine Deposits
+  - Uncertainties/Variables: No. Time Steps To Distribute Marine Deposits
     Parameter: diffnb
     value: 40
-  - Uncertainties/Variables：Marine % Max Deposition
+  - Uncertainties/Variables: Marine % Max Deposition
     Parameter: diffprop
     value: 0.000005
 
@@ -98,5 +98,5 @@ location:
   longitude: ''
 
 # Contact details for corresponding authors
-contact:xuemei.yang@postgrad.curtin.edu.au;gregory.c.smith@curtin.edu.au
+contact: xuemei.yang@postgrad.curtin.edu.au ; gregory.c.smith@curtin.edu.au
 ---
