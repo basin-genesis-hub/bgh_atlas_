@@ -21,15 +21,8 @@ language:  "en"
 logo: site_resources/BasinGensisHub.png
 
 future: true
-# exclude:  
-#   - CHANGELOG.md
-#   - CNAME
-#   - Dockerfile
-#   - Gemfile
-#   - Gemfile.lock
-#   - LICENSE
-#   - README.md
-#   - Vagrantfile
+
+include: _site/_headers
 
 exclude: [vendor]
 
