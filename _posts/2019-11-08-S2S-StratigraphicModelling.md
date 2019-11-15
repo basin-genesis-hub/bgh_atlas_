@@ -82,7 +82,7 @@ result:
 
 
 # Give citation or DOI for paper
-citation: Ding, X., Salles, T., Flament, N., and Rey, P.: Quantitative stratigraphic analysis in a source-to-sink numerical framework, Geosci. Model Dev., 12, 2571–2585, https://doi.org/10.5194/gmd-12-2571-2019, 2019.
+citation: 'Ding, X., Salles, T., Flament, N., and Rey, P.: Quantitative stratigraphic analysis in a source-to-sink numerical framework, Geosci. Model Dev., 12, 2571–2585, https://doi.org/10.5194/gmd-12-2571-2019, 2019.'
 
 # Online pointer to your model (Git/Binder/FTP etc.)
 model_url: 'https://github.com/XuesongDing/GMD-models'
