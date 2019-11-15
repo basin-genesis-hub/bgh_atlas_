@@ -5,11 +5,6 @@
   port = 8080 # Port that the dev server will be listening on
   publish = "build" # If you use a _redirect file, provide the path to your static content folder
 
-[context.deploy-preview]
-  command = "make deploy_preview"
-[context.branch-deploy]
-  command = "make branch_deploy"
-
 [[headers]]
   for = "/*"
   [headers.values]
