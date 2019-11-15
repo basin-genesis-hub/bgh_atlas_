@@ -10,7 +10,7 @@
 [context.deploy-preview]
   command = "make deploy_preview"
 [context.branch-deploy]
-  command = "make branch_preview"
+  command = "make branch_deploy"
 [[headers]]
   for = "/*"
   [headers.values]
