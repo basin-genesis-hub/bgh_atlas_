@@ -48,11 +48,22 @@ Once you are satisfied with the post it’s time to commit it. Let’s assume th
 
 In another terminal go to the bgh_atlas directory level and run the following commands
 
+Please make sure to switch to the specific branch of the Atlas you would like to add your post to
+
+* For the public version please ensure you are on the master branch 
+```bash
+git checkout master
+```
+* For the private and member-only version please ensure you are on the netlify-gated branch
+```bash
+git checkout netlify-gated
+```
+
 * To Get the latest changes/update your repository run 
 ```bash
 git pull 
 ```
-* To see what has changed run
+* To see what has changed run and ensure that you are on the correct and intended branch
 ```bash
 git status
 ```
