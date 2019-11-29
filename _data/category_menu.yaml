@@ -16,3 +16,7 @@ docs:
     desc: Models using Badlands, GPlates and CitcomS software
     image: 'citcoms.gif'
     url: /badlands-gplates-citcom/
+  - title: pyGplates models
+    desc: Models using pyGplates software
+    image: 'pygplates.gif'
+    url: /pygplates/
