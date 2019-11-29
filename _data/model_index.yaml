@@ -6,3 +6,5 @@ docs:
     url: depositional/
   - title: Coupled models
     url: coupled/
+  - title: pyGplates models
+    url: pygplates/
