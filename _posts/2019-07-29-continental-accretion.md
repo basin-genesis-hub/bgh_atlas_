@@ -39,7 +39,7 @@ citation: 'https://www.nature.com/articles/nature13033'
 model_url: 'doi:10.1038/nature13033'
 
 # Hashable search terms
-keywords: '' 
+keywords: 'continental, dazam' 
 
 # Model location coordinates
 location: 
