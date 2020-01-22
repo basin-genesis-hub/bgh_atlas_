@@ -19,4 +19,4 @@
     must-revalidate'''
 
     # The Basic-Auth header may not be available on all plans.
-    Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
+    Basic-Auth = "patrice:3pVj2BCG dietmar:afX6BuTS julian:H9YjX7wh ben:NKzw8EvJ sara:hK5Afad3 danial:Ye8Ejwgq"
