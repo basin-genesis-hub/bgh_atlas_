@@ -75,3 +75,9 @@
       }
    }
 }
+
+table{
+  @extend %table;
+  @extend %table-condensed;
+  @extend %table-bordered;
+}
