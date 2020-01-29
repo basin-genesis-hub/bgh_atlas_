@@ -1,0 +1,22 @@
+# sample dev block in the toml
+# note: each of these fields are OPTIONAL and should only be used if you need an override
+[dev]
+  command = "yarn dev" # Command to start your dev server
+  port = 8080 # Port that the dev server will be listening on
+  publish = "build" # If you use a _redirect file, provide the path to your static content folder
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+    #  Multi-value headers are expressed with multi-line strings
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
+
+    # The Basic-Auth header may not be available on all plans.
+    Basic-Auth = "patrice.rey:3pVj2BCG dietmar.muller:afX6BuTS julian:H9YjX7wh ben:NKzw8EvJ sara:hK5Afad3 danial:Ye8Ejwgq"
