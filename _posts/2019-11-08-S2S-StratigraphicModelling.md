@@ -92,8 +92,8 @@ keywords: 'Badlands, Stratigraphic modelling, Source-to-sink'
 
 # Model location coordinates
 location:
-  - latitude: ''
-  - longitude: ''
+  latitude: ''
+  longitude: ''
 
 # Contact
 contact: Xuesong Ding (xuesong.ding@epss.ucla.edu)

@@ -94,8 +94,8 @@ keywords: ''
 
 # Model location coordinates (near approximation)
 location: 
-  latitude: ''
-  longitude: ''
+  latitude: -37.8136
+  longitude: 144.9631
 
 # Contact details for corresponding authors
 contact: xuemei.yang@postgrad.curtin.edu.au ; gregory.c.smith@curtin.edu.au

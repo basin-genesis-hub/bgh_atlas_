@@ -77,8 +77,8 @@ keywords: ''
 
 # Model location coordinates
 location:
-  - latitude: ''
-  - longitude: ''
+  latitude: '-37.8136'
+  longitude: '144.9631'
 
 # Contact
 contact:
