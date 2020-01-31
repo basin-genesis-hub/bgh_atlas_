@@ -41,3 +41,4 @@ paginate: 5
 plugins_dir:
   - jekyll-admin
   - jekyll-sitemap
+  - jekyll-maps
