@@ -22,7 +22,7 @@ logo: site_resources/BasinGensisHub.png
 
 future: true
 
-include: _site/_headers
+include: [_site/_headers]
 
 exclude: [vendor]
 
@@ -42,3 +42,7 @@ plugins_dir:
   - jekyll-admin
   - jekyll-sitemap
   - jekyll-maps
+
+maps:
+  google:
+    api_key: AIzaSyDKjnkmRaZ-Da5ArEBdfmCQkXy3eV07Hyk
