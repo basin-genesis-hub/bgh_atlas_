@@ -36,7 +36,7 @@ animation:
 # Provide an image to display for the model setup along with a description
 model_setup:
   url: 'https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2020/01/PlateID_assignment_unstructured.png'
-  description: 'We seed a bunch of points on the sphere using the legendary spherical meshing package, stripy (https://www.github.com/underworldcode/stripy), that remain static through time as we query the plate ID at each lat/lon coordinate through time using pyGPlates. Iterating through a wide selection of plate reconstructions, we determine where on the sphere the plate IDs match and where they do not. A score is kept for how many reconstructions have contradicting plate IDs - i.e. if a point at 142,35 (lon/lat) has a different plate ID for 3 reconstructions, then it is assigned an uncertainty rating of 3.'
+  description: 'We seed a bunch of points on the sphere using the legendary spherical meshing package, <a href=https://www.github.com/underworldcode/stripy>stripy</a>, that remain static through time as we query the plate ID at each lat/lon coordinate through time using pyGPlates. Iterating through a wide selection of plate reconstructions, we determine where on the sphere the plate IDs match and where they do not. A score is kept for how many reconstructions have contradicting plate IDs - i.e. if a point at 142,35 (lon/lat) has a different plate ID for 3 reconstructions, then it is assigned an uncertainty rating of 3.'
 
 # Describe the conditions/parameters for the models in a table or image or both along with a description
 conditions:
