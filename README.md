@@ -69,7 +69,7 @@ git commit -m 'Your message about the post'
 git push
 ```
 
-Et voilà! your model should appear in https://basin-genesis-hub.github.io/bgh_atlas/ under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
+Et voilà! your model should appear in https://members.atlas.bgh.org.au/ under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
 
 
 # If the steps above are not working for you, DO NOT fear! 
