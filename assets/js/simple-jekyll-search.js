@@ -1,15 +1,38 @@
 /*!
-  * Simple-Jekyll-Search v1.7.2 (https://github.com/christian-fei/Simple-Jekyll-Search)
-  * Copyright 2015-2018, Christian Fei
-  * Licensed under the MIT License.
+  * Simple-Jekyll-Search v1.4.1 (https://github.com/christian-fei/Simple-Jekyll-Search)
+  * Copyright 2015-2017, Christian Fei
+  * Licensed under MIT (https://github.com/christian-fei/Simple-Jekyll-Search/blob/master/LICENSE.md)
   */
 
-(function(){
-/* globals ActiveXObject:false */
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+'use strict';
 
+function fuzzysearch (needle, haystack) {
+  var tlen = haystack.length;
+  var qlen = needle.length;
+  if (qlen > tlen) {
+    return false;
+  }
+  if (qlen === tlen) {
+    return needle === haystack;
+  }
+  outer: for (var i = 0, j = 0; i < qlen; i++) {
+    var nch = needle.charCodeAt(i);
+    while (j < tlen) {
+      if (haystack.charCodeAt(j++) === nch) {
+        continue outer;
+      }
+    }
+    return false;
+  }
+  return true;
+}
+
+module.exports = fuzzysearch;
+
+},{}],2:[function(require,module,exports){
 'use strict'
-
-var _$JSONLoader_2 = {
+module.exports = {
   load: load
 }
 
@@ -33,16 +56,15 @@ function createStateChangeListener (xhr, callback) {
 }
 
 function getXHR () {
-  return window.XMLHttpRequest ? new window.XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
+  return (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
 }
 
+},{}],3:[function(require,module,exports){
 'use strict'
-
-var _$OptionsValidator_3 = function OptionsValidator (params) {
+module.exports = function OptionsValidator (params) {
   if (!validateParams(params)) {
     throw new Error('-- OptionsValidator: required options missing')
   }
-
   if (!(this instanceof OptionsValidator)) {
     return new OptionsValidator(params)
   }
@@ -71,83 +93,24 @@ var _$OptionsValidator_3 = function OptionsValidator (params) {
   }
 }
 
-'use strict';
-
-function fuzzysearch (needle, haystack) {
-  var tlen = haystack.length;
-  var qlen = needle.length;
-  if (qlen > tlen) {
-    return false;
-  }
-  if (qlen === tlen) {
-    return needle === haystack;
-  }
-  outer: for (var i = 0, j = 0; i < qlen; i++) {
-    var nch = needle.charCodeAt(i);
-    while (j < tlen) {
-      if (haystack.charCodeAt(j++) === nch) {
-        continue outer;
-      }
-    }
-    return false;
-  }
-  return true;
-}
-
-var _$fuzzysearch_1 = fuzzysearch;
-
+},{}],4:[function(require,module,exports){
 'use strict'
-
-/* removed: var _$fuzzysearch_1 = require('fuzzysearch') */;
-
-var _$FuzzySearchStrategy_5 = new FuzzySearchStrategy()
-
-function FuzzySearchStrategy () {
-  this.matches = function (string, crit) {
-    return _$fuzzysearch_1(crit.toLowerCase(), string.toLowerCase())
-  }
-}
-
-'use strict'
-
-var _$LiteralSearchStrategy_6 = new LiteralSearchStrategy()
-
-function LiteralSearchStrategy () {
-  this.matches = function (str, crit) {
-    if (!str) return false
-
-    str = str.trim().toLowerCase()
-    crit = crit.trim().toLowerCase()
-
-    return crit.split(' ').filter(function (word) {
-      return str.indexOf(word) >= 0
-    }).length === crit.split(' ').length
-  }
-}
-
-'use strict'
-
-var _$Repository_4 = {
+module.exports = {
   put: put,
   clear: clear,
+  get: get,
   search: search,
   setOptions: setOptions
 }
 
-/* removed: var _$FuzzySearchStrategy_5 = require('./SearchStrategies/FuzzySearchStrategy') */;
-/* removed: var _$LiteralSearchStrategy_6 = require('./SearchStrategies/LiteralSearchStrategy') */;
-
-function NoSort () {
-  return 0
-}
+var FuzzySearchStrategy = require('./SearchStrategies/FuzzySearchStrategy')
+var LiteralSearchStrategy = require('./SearchStrategies/LiteralSearchStrategy')
 
 var data = []
 var opt = {}
-
 opt.fuzzy = false
 opt.limit = 10
-opt.searchStrategy = opt.fuzzy ? _$FuzzySearchStrategy_5 : _$LiteralSearchStrategy_6
-opt.sort = NoSort
+opt.searchStrategy = opt.fuzzy ? FuzzySearchStrategy : LiteralSearchStrategy
 
 function put (data) {
   if (isObject(data)) {
@@ -163,13 +126,12 @@ function clear () {
   return data
 }
 
-function isObject (obj) {
-  return Boolean(obj) && Object.prototype.toString.call(obj) === '[object Object]'
+function get () {
+  return data
 }
 
-function isArray (obj) {
-  return Boolean(obj) && Object.prototype.toString.call(obj) === '[object Array]'
-}
+function isObject (obj) { return !!obj && Object.prototype.toString.call(obj) === '[object Object]' }
+function isArray (obj) { return !!obj && Object.prototype.toString.call(obj) === '[object Array]' }
 
 function addObject (_data) {
   data.push(_data)
@@ -178,8 +140,7 @@ function addObject (_data) {
 
 function addArray (_data) {
   var added = []
-  clear()
-  for (var i = 0, len = _data.length; i < len; i++) {
+  for (var i = 0; i < _data.length; i++) {
     if (isObject(_data[i])) {
       added.push(addObject(_data[i]))
     }
@@ -191,7 +152,7 @@ function search (crit) {
   if (!crit) {
     return []
   }
-  return findMatches(data, crit, opt.searchStrategy, opt).sort(opt.sort)
+  return findMatches(data, crit, opt.searchStrategy, opt)
 }
 
 function setOptions (_opt) {
@@ -199,8 +160,7 @@ function setOptions (_opt) {
 
   opt.fuzzy = _opt.fuzzy || false
   opt.limit = _opt.limit || 10
-  opt.searchStrategy = _opt.fuzzy ? _$FuzzySearchStrategy_5 : _$LiteralSearchStrategy_6
-  opt.sort = _opt.sort || NoSort
+  opt.searchStrategy = _opt.fuzzy ? FuzzySearchStrategy : LiteralSearchStrategy
 }
 
 function findMatches (data, crit, strategy, opt) {
@@ -225,7 +185,7 @@ function findMatchesInObject (obj, crit, strategy, opt) {
 function isExcluded (term, excludedTerms) {
   var excluded = false
   excludedTerms = excludedTerms || []
-  for (var i = 0, len = excludedTerms.length; i < len; i++) {
+  for (var i = 0; i < excludedTerms.length; i++) {
     var excludedTerm = excludedTerms[i]
     if (!excluded && new RegExp(term).test(excludedTerm)) {
       excluded = true
@@ -234,11 +194,37 @@ function isExcluded (term, excludedTerms) {
   return excluded
 }
 
+},{"./SearchStrategies/FuzzySearchStrategy":5,"./SearchStrategies/LiteralSearchStrategy":6}],5:[function(require,module,exports){
 'use strict'
+var fuzzysearch = require('fuzzysearch')
 
-var _$Templater_7 = {
+module.exports = new FuzzySearchStrategy()
+
+function FuzzySearchStrategy () {
+  this.matches = function (string, crit) {
+    return fuzzysearch(crit, string)
+  }
+}
+
+},{"fuzzysearch":1}],6:[function(require,module,exports){
+'use strict'
+module.exports = new LiteralSearchStrategy()
+
+function LiteralSearchStrategy () {
+  this.matches = function (string, crit) {
+    if (typeof string !== 'string') {
+      return false
+    }
+    string = string.trim()
+    return string.toLowerCase().indexOf(crit.toLowerCase()) >= 0
+  }
+}
+
+},{}],7:[function(require,module,exports){
+'use strict'
+module.exports = {
   compile: compile,
-  setOptions: __setOptions_7
+  setOptions: setOptions
 }
 
 var options = {}
@@ -246,7 +232,7 @@ options.pattern = /\{(.*?)\}/g
 options.template = ''
 options.middleware = function () {}
 
-function __setOptions_7 (_options) {
+function setOptions (_options) {
   options.pattern = _options.pattern || options.pattern
   options.template = _options.template || options.template
   if (typeof _options.middleware === 'function') {
@@ -264,9 +250,140 @@ function compile (data) {
   })
 }
 
-'use strict'
+},{}],8:[function(require,module,exports){
+/*!
+  * Simple-Jekyll-Search v1.4.1 (https://github.com/christian-fei/Simple-Jekyll-Search)
+  * Copyright 2015-2017, Christian Fei
+  * Licensed under MIT (https://github.com/christian-fei/Simple-Jekyll-Search/blob/master/LICENSE.md)
+  */
 
-var _$utils_9 = {
+;(function (window, document) {
+  'use strict'
+
+  var options = {
+    searchInput: null,
+    resultsContainer: null,
+    json: [],
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    templateMiddleware: function () {},
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: []
+  }
+
+  var requiredOptions = ['searchInput', 'resultsContainer', 'json']
+
+  var templater = require('./Templater')
+  var repository = require('./Repository')
+  var jsonLoader = require('./JSONLoader')
+  var optionsValidator = require('./OptionsValidator')({
+    required: requiredOptions
+  })
+  var utils = require('./utils')
+
+  /*
+    Public API
+  */
+  window.SimpleJekyllSearch = function SimpleJekyllSearch (_options) {
+    var errors = optionsValidator.validate(_options)
+    if (errors.length > 0) {
+      throwError('You must specify the following required options: ' + requiredOptions)
+    }
+
+    options = utils.merge(options, _options)
+
+    templater.setOptions({
+      template: options.searchResultTemplate,
+      middleware: options.templateMiddleware
+    })
+
+    repository.setOptions({
+      fuzzy: options.fuzzy,
+      limit: options.limit
+    })
+
+    if (utils.isJSON(options.json)) {
+      initWithJSON(options.json)
+    } else {
+      initWithURL(options.json)
+    }
+
+    return {
+      search: search
+    }
+  }
+
+  // for backwards compatibility
+  window.SimpleJekyllSearch.init = window.SimpleJekyllSearch
+
+  if (typeof window.SimpleJekyllSearchInit === 'function') {
+    window.SimpleJekyllSearchInit.call(this, window.SimpleJekyllSearch)
+  }
+
+  function initWithJSON (json) {
+    repository.put(json)
+    registerInput()
+  }
+
+  function initWithURL (url) {
+    jsonLoader.load(url, function (err, json) {
+      if (err) {
+        throwError('failed to get JSON (' + url + ')')
+      }
+      initWithJSON(json)
+    })
+  }
+
+  function emptyResultsContainer () {
+    options.resultsContainer.innerHTML = ''
+  }
+
+  function appendToResultsContainer (text) {
+    options.resultsContainer.innerHTML += text
+  }
+
+  function registerInput () {
+    options.searchInput.addEventListener('keyup', function (e) {
+      var key = e.which
+      if (isWhitelistedKey(key)) {
+        emptyResultsContainer()
+        var query = e.target.value
+        search(query)
+      }
+    })
+  }
+
+  function search (query) {
+    if (isValidQuery(query)) {
+      render(repository.search(query))
+    }
+  }
+
+  function render (results) {
+    var len = results.length
+    if (len === 0) {
+      return appendToResultsContainer(options.noResultsText)
+    }
+    for (var i = 0; i < len; i++) {
+      appendToResultsContainer(templater.compile(results[i]))
+    }
+  }
+
+  function isValidQuery (query) {
+    return query && query.length > 0
+  }
+
+  function isWhitelistedKey (key) {
+    return [13, 16, 20, 37, 38, 39, 40, 91].indexOf(key) === -1
+  }
+
+  function throwError (message) { throw new Error('SimpleJekyllSearch --- ' + message) }
+})(window, document)
+
+},{"./JSONLoader":2,"./OptionsValidator":3,"./Repository":4,"./Templater":7,"./utils":9}],9:[function(require,module,exports){
+'use strict'
+module.exports = {
   merge: merge,
   isJSON: isJSON
 }
@@ -288,132 +405,9 @@ function isJSON (json) {
       return true
     }
     return false
-  } catch (err) {
+  } catch (e) {
     return false
   }
 }
 
-var _$src_8 = {};
-(function (window) {
-  'use strict'
-
-  var options = {
-    searchInput: null,
-    resultsContainer: null,
-    json: [],
-    success: Function.prototype,
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    templateMiddleware: Function.prototype,
-    sortMiddleware: function () {
-      return 0
-    },
-    noResultsText: 'No results found',
-    limit: 10,
-    fuzzy: false,
-    exclude: []
-  }
-
-  var requiredOptions = ['searchInput', 'resultsContainer', 'json']
-
-  /* removed: var _$Templater_7 = require('./Templater') */;
-  /* removed: var _$Repository_4 = require('./Repository') */;
-  /* removed: var _$JSONLoader_2 = require('./JSONLoader') */;
-  var optionsValidator = _$OptionsValidator_3({
-    required: requiredOptions
-  })
-  /* removed: var _$utils_9 = require('./utils') */;
-
-  window.SimpleJekyllSearch = function (_options) {
-    var errors = optionsValidator.validate(_options)
-    if (errors.length > 0) {
-      throwError('You must specify the following required options: ' + requiredOptions)
-    }
-
-    options = _$utils_9.merge(options, _options)
-
-    _$Templater_7.setOptions({
-      template: options.searchResultTemplate,
-      middleware: options.templateMiddleware
-    })
-
-    _$Repository_4.setOptions({
-      fuzzy: options.fuzzy,
-      limit: options.limit,
-      sort: options.sortMiddleware
-    })
-
-    if (_$utils_9.isJSON(options.json)) {
-      initWithJSON(options.json)
-    } else {
-      initWithURL(options.json)
-    }
-
-    return {
-      search: search
-    }
-  }
-
-  function initWithJSON (json) {
-    options.success(json)
-    _$Repository_4.put(json)
-    registerInput()
-  }
-
-  function initWithURL (url) {
-    _$JSONLoader_2.load(url, function (err, json) {
-      if (err) {
-        throwError('failed to get JSON (' + url + ')')
-      }
-      initWithJSON(json)
-    })
-  }
-
-  function emptyResultsContainer () {
-    options.resultsContainer.innerHTML = ''
-  }
-
-  function appendToResultsContainer (text) {
-    options.resultsContainer.innerHTML += text
-  }
-
-  function registerInput () {
-    options.searchInput.addEventListener('keyup', function (e) {
-      if (isWhitelistedKey(e.which)) {
-        emptyResultsContainer()
-        search(e.target.value)
-      }
-    })
-  }
-
-  function search (query) {
-    if (isValidQuery(query)) {
-      emptyResultsContainer()
-      render(_$Repository_4.search(query), query)
-    }
-  }
-
-  function render (results, query) {
-    var len = results.length
-    if (len === 0) {
-      return appendToResultsContainer(options.noResultsText)
-    }
-    for (var i = 0; i < len; i++) {
-      results[i].query = query
-      appendToResultsContainer(_$Templater_7.compile(results[i]))
-    }
-  }
-
-  function isValidQuery (query) {
-    return query && query.length > 0
-  }
-
-  function isWhitelistedKey (key) {
-    return [13, 16, 20, 37, 38, 39, 40, 91].indexOf(key) === -1
-  }
-
-  function throwError (message) {
-    throw new Error('SimpleJekyllSearch --- ' + message)
-  }
-})(window)
-
-}());
+},{}]},{},[8]);
