@@ -22,6 +22,7 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "cryptojs": "^2.5.3",
+    "lunr": "^2.3.8",
     "marked": "^0.7.0",
     "netlify-identity-widget": "^1.5.5",
     "vinyl": "^2.2.0"
