@@ -47,8 +47,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-maps
 
-gems:
-  - jekyll-maps
 paginate: 5
 
 maps:
