@@ -44,8 +44,8 @@ keywords: ''
 
 # Model location coordinates
 location:
-  - latitude: '4.67 S to 10.97 S'
-  - longitude: '140.35 E to 148.20 E'
+  - latitude: '-7.9'
+  - longitude: '140.35'
 
 # Contact
 contact:

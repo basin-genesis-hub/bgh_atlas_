@@ -41,10 +41,14 @@ jekyll_auth:
 # Build settings
 markdown: kramdown
 permalink: /:title/
-plugins: [jekyll-paginate]
-paginate: 5
-
-# Plugins
-plugins_dir:
+plugins: 
+  - jekyll-paginate
   - jekyll-admin
   - jekyll-sitemap
+  - jekyll-maps
+
+paginate: 5
+
+maps:
+  google:
+    api_key: AIzaSyDKjnkmRaZ-Da5ArEBdfmCQkXy3eV07Hyk
