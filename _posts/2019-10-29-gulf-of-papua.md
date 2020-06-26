@@ -1,6 +1,6 @@
 ---
 layout: model
-model_name: 'Gulf of Papua - uniform erodibility coefficient'
+model_name: 'Gulf of Papua - uniform erodibility coefficient  !SITE_URL!/!POST_URL!/'
 author: 
   - 'Rhiannon Garrett'
 # Software options include Badlands, Underworld or Coupled
@@ -44,9 +44,16 @@ keywords: ''
 
 # Model location coordinates
 location:
-  - latitude: '-7.9'
-  - longitude: '140.35'
+  title: Gulf of Papua - uniform erodibility coefficient
+  image: https://www.earthbyte.org/BGH_Wordpress/wp-content/uploads/2019/08/Initial.png
+  url: 'https://atlas.bgh.org.au/gulf-of-papua/'
+  latitude: -7.9
+  longitude: 140.35
+
+map: "true"
 
 # Contact
-contact:
+contact: 
 ---
+
+{{ page.location.url | replace: '!SITE_URL!', site.baseurl  | replace: '!POST_URL!', page.path }}
