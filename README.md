@@ -15,21 +15,21 @@
 
 1. First download this repo into your computer by typing the following command in the terminal
 ```bash
-git clone https://github.com/basin-genesis-hub/bgh_atlas.git
+git clone https://github.com/basin-genesis-hub/bgh_atlas_member_private.git
 ```
-(You'll only have to do this once.)
+(You'll only have to do this once. Once you have a local folder of the repo on your system, ignore this command.)
 
-You should now have a directory in your computer called bgh_atlas
+You should now have a directory in your computer called bgh_atlas_member_private
 
-2. Make a copy of the template file  `_posts/TEMPLATE.md`, call your copy DATE-TITLE.md
-Modify your .md file in the text editor of your choice. Your time to shine! ps: FOLLOW THE TEMPLATE.
+2. Make a copy of the template file  `_posts/Template.md`, call your copy DATE-TITLE.md
+Modify your .md file in the text editor of your choice. Your time to shine! ps: FOLLOW THE TEMPLATE. Instructions are provided in the comments.
 
 To view the post in action do the following:
 Make sure that docker desktop is running (that’s the whale icon on mac OSx)
 
 In the terminal go to the bgh_atlas directory:
 ```bash
-cd bgh_atlas/
+cd bgh_atlas_member_private/
 ```
 
 Run the following command in the terminal at the bgh_atlas directory level
@@ -47,17 +47,6 @@ You can make changes to the post and refresh the browser to see them.
 Once you are satisfied with the post it’s time to commit it. Let’s assume the post is called 2019-07-01-foobar.md
 
 In another terminal go to the bgh_atlas directory level and run the following commands
-
-Please make sure to switch to the specific branch of the Atlas you would like to add your post to
-
-* For the public version please ensure you are on the master branch 
-```bash
-git checkout master
-```
-* For the private and member-only version please ensure you are on the netlify-gated branch
-```bash
-git checkout netlify-gated
-```
 
 * To Get the latest changes/update your repository run 
 ```bash
@@ -80,13 +69,15 @@ git commit -m 'Your message about the post'
 git push
 ```
 
-Et voilà! your model should appear in http://atlas.bgh.org.au/  under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom). 
+Et voilà! your model should appear just in http://members.bgh.org.au/ if you have selected the 'private' option in the privacy attribute on the template under the category you have chosen (e.g. Underworld, Badlands, Badlands-Underworld, Badlands-Underworld-Gplates-Citcom, pyGPlates). 
+
+However, if you would like the model to be appearing also on http://atlas.bgh.org.au/, then please select the privacy option to be 'public'.
 
 
 # If the steps above are not working for you, DO NOT fear! 
 Login into your github
 
-Go to https://github.com/basin-genesis-hub/bgh_atlas/tree/master/_posts
+Go to https://github.com/basin-genesis-hub/bgh_atlas_member_private/tree/master/_posts
 
 Upload your .md file by clicking on the upload files tab and dragging the file
 
