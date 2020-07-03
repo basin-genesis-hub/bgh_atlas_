@@ -5,7 +5,7 @@ author:
   - 'Laura Harrington, S. Zahirovic, T. Salles, C. Braz & R.D. Müller'
 
 # Software options include Badlands, Underworld or Coupled
-software: 'Badlands-Gplates-Citcoms' #
+software: 'Badlands-GPlates-CitcomS' #
 version: 
   - 'Badlands 1.0'
   -  'Gplates'
