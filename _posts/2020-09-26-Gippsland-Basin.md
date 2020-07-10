@@ -99,6 +99,8 @@ keywords: ''
 location: 
   latitude: 22
   longitude: 12
+  url: https://atlas.bgh.org.au/Gippsland-Basin/
+  url_text: View Model 
 
 map: "true"
 
