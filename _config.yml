@@ -31,8 +31,10 @@ future: true
 #   - README.md
 #   - Vagrantfile
 
-exclude: [vendor]
-
+exclude: 
+  - vendor
+  - node_modules
+  
 analytics: UA-143750223-1
 
 jekyll_auth:
