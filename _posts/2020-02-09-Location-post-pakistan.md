@@ -85,10 +85,14 @@ model_url: 'doi:'
 keywords: 'pyGPlates, stripy' 
 
 # Model location coordinates (near approximation)
-location: 
-  latitude: '30'
-  longitude: '69'
+location:
+  title: Location Pakistan
+  url: '!SITE_URL!/!POST_URL!/'
+  url_text: View Model 
+  latitude: 30
+  longitude: 69
 
+map: "true"
 # Contact details for corresponding authors
 contact:
 ---

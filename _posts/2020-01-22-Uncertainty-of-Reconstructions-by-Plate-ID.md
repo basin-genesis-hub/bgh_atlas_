@@ -86,9 +86,10 @@ keywords: 'pyGPlates, stripy'
 
 # Model location coordinates (near approximation)
 location: 
-  latitude: '30'
-  longitude: '69'
+  latitude: 12
+  longitude: 52
 
+map: "true"
 # Contact details for corresponding authors
 contact:
 ---
