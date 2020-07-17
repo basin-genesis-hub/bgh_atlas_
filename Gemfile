@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby '2.5.8'
+ruby '2.7.1'
 gem 'omniauth-google-oauth2'
 gem 'jekyll-auth'
 gem 'sinatra-google-auth'
