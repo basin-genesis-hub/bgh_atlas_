@@ -48,11 +48,12 @@ keywords: ''
 
 # Model location coordinates
 location:
-	title: Gulf of Papua - uniform erodibility coefficient
-	image:
-	url_text: View Model
-  - latitude: '4.67 S to 10.97 S'
-  - longitude: '140.35 E to 148.20 E'
+  title: Gulf of Papua - uniform erodibility coefficient
+  image:
+  url: https://members.atlas.bgh.org.au/gulf-of-papua/
+  url_text: View Model
+  latitude: -8.542148 
+  longitude: 144.366907
   
 map: "true"
 # Contact
