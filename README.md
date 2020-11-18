@@ -89,3 +89,7 @@ Your changes will be accepted by the BGH-Atlas team, but you won’t be able to 
 All the animations have to be in .mp4
 
 To obtain a url for the all images and animations, store them in the bgh word press under media, copy the url and paste it in the yaml under the appropiate field. 
+
+# Additional Trouble-shooting tips
+- Duplicate Posts: Show up in the situation where a post has its date changed in the file name. Currently the fix is to manually remove the file from this public Atlas repo and commit the changes.
+- Certain characters showing unusually (weird symbols): Happens in certain situations where text is copy-pasted from webpages. Often the culprits are apostrophes and other punctuation symbols or special characters.
