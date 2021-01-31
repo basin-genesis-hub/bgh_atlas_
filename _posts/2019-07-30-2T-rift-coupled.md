@@ -36,7 +36,7 @@ result:
 citation: ''
 
 # Online pointer to your model (Git/Binder/FTP etc.)
-model_url: 'https://github.com/underworldcode/UWGeodynamics/blob/master/tutorials/Tutorial_11_Coupling_with_Badlands.ipynb'
+model_url: 'https://github.com/underworldcode/UWGeodynamics/blob/v2.10.0/docs/tutorials/Tutorial_11_Coupling_with_Badlands.ipynb'
 
 # Hashable search terms
 keywords: '' 
